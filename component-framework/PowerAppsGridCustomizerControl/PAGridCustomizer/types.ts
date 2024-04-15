@@ -141,9 +141,15 @@ export interface NoRowsOverlayConfig {
 }
 
 export const RECID = '__rec_id';
+export const d1 = 'socl_vatnumber';
 export interface RowData {
   /** Unique id for the row */
-  readonly [RECID]: string;
+    readonly [RECID]: string;
+    readonly [d1]: {
+        etn: string;
+        name: string;
+    };
+    
 }
 
 export interface ColumnDefinition {
