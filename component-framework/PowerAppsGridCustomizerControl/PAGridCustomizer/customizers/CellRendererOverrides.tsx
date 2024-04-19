@@ -17,7 +17,7 @@ export const cellRendererOverrides: CellRendererOverrides = {
                 return <Label style={{ color: 'green', textAlign: 'right', padding: '5px 25px 5px 0px' }}>{props.formattedValue}</Label>
             }
             else {
-                return <Label style={{ color: 'red', textAlign: 'right', padding: '5px 25px 5px 0px' }}>{col.rowData?.['socl_invoicenumber'].name}</Label>
+                return <Label style={{ color: 'red', textAlign: 'right', padding: '5px 25px 5px 0px' }}>{col.rowData?.[d1].name}</Label>
             }
         }
     }
